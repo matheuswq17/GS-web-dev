@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 15px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background: #587453;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 20s infinite;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.content a {
+    background: #034e88;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+@keyframes change {
+    0%, 100% {
+        background-image: url(images/fazenda\ \(1\).png);
+    }
+
+    33.33% {
+        background-image: url(images/fazenda\ \(2\).png);
+    }
+
+    66.66% {
+        background-image: url(images/fazenda\ \(3\).png);
+    }
+}
+
+h1 {
+    font-size: 100px;
+}
